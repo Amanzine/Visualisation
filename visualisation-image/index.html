@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Visualisation IMAGE 2</title>
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <h2>Exposition <br></h2><h1><i>Posthuman</i></h1><h2>Fondation Asher Edelman, Pully, 1991<br>Plan de l'exposition<br></h2>
+
+<map name="im" >
+   <area  alt="Salle 1" href="#target-examples" title="Salle 1" class="leNom"  coords="266,407,266,453,432,452,433,406" shape="poly" data-maphilight='{"stroke":false,"fillColor":"FF0000","fillOpacity":0.5}' id="salle1">
+    <area href="#target-examples" alt="Salle 1a" title="Salle 1a" data-maphilight='{"stroke":false,"fillColor":"ff6600","fillOpacity":0.5}' coords="268,462,270,506,324,505,324,462" shape="poly" id="salle1">
+    <area href="#target-examples" alt="Salle 1b" title="Salle 1b" data-maphilight='{"stroke":false,"fillColor":"ff6600","fillOpacity":0.5}' coords="326,460,327,507,383,506,383,460" shape="poly"id="salle1">
+    <area href="#target-examples" alt="Salle 1c" title="Salle 1c" data-maphilight='{"stroke":false,"fillColor":"ff6600","fillOpacity":0.5}'  coords="384,460,386,508,438,508,437,459" shape="poly" id="salle1">
+    <area href="#target-examples" alt="Salle 1d" title="Salle 1d" data-maphilight='{"stroke":false,"fillColor":"ff6600","fillOpacity":0.5}' coords="222,462,228,508,265,509,263,462" shape="poly" id="salle1">
+    <area href="#target-examples" alt="Salle 2" title="Salle 2" class="leNom2" data-maphilight='{"stroke":false,"fillColor":"ffff00","fillOpacity":0.5}' coords="439,399,438,352,113,355,114,398,135,401,135,408,114,409,115,465,102,465,105,349,45,350,13,508,193,505,194,409" shape="poly" id="salle2">
+    <area href="#target-examples" alt="Escalier Rez" data-maphilight='{"stroke":false,"fillColor":"fe6aa8","fillOpacity":0.5}' title="Escalier Rez" coords="197,456,266,458,264,406,197,407" shape="poly" id="salle3">
+    <area href="#target-examples" alt="Escalier 2eme" data-maphilight='{"stroke":false,"fillColor":"fe6aa8","fillOpacity":0.5}' title="Escalier 2eme" coords="196,140,198,86,264,88,263,140" shape="poly" id="salle3">
+    <area href="#target-examples" alt="Salle 3a" title="Salle 3a" data-maphilight='{"stroke":false,"fillColor":"33cc66","fillOpacity":0.5}' coords="187,141,185,110,109,109,110,143" shape="poly" id="salle4">
+    <area href="#target-examples" alt="Salle 3b" title="Salle 3b" data-maphilight='{"stroke":false,"fillColor":"33cc66","fillOpacity":0.5}'  coords="109,145,111,193,351,192,323,143" shape="poly" id="salle4">
+    <area href="#target-examples" alt="Salle 3c" title="Salle 3c" data-maphilight='{"stroke":false,"fillColor":"33cc66","fillOpacity":0.5}' coords="324,143,384,143,430,167,433,192,353,193" shape="poly" id="salle4">
+    <area href="#target-examples" alt="Salle 3d" title="Salle 3d" data-maphilight='{"stroke":false,"fillColor":"00ffff","fillOpacity":0.5}' coords="436,168,386,141,385,86,432,64" shape="poly" id="salle5">
+    <area href="#target-examples" alt="Salle 3e" title="Salle 3e" data-maphilight='{"stroke":false,"fillColor":"00ffff","fillOpacity":0.5}' coords="436,62,383,83,322,83,318,61" shape="poly" id="salle5">
+    <area href="#target-examples" alt="Salle 3f" title="Salle 3f"  data-maphilight='{"stroke":false,"fillColor":"660099","fillOpacity":0.5}' coords="322,84,316,59,273,60,271,83" shape="poly" id="salle6">
+    <area href="#target-examples" alt="Salle 3g" title="Salle 3g"  data-maphilight='{"stroke":false,"fillColor":"660099","fillOpacity":0.5}' coords="317,87,273,86,273,140,318,138" shape="poly" id="salle6">
+    <area href="#target-examples" alt="Salle 3h" title="Salle 3h"  data-maphilight='{"stroke":false,"fillColor":"660099","fillOpacity":0.5}' coords="325,90,324,136,380,136,380,90" shape="poly" id="salle6">
+</map><img src="https://nsa39.casimages.com/img/2018/11/08/181108111245414640.png" class="leNom" usemap="#im">
+<p id='target-examples'>Aux couleurs du plan sont associées les couleurs des cercles correspondants aux œuvres de l'exposition. En cliquant sur les cercles, les photos des œuvres, leurs cartels et leurs emplacements apparaissent.</p>
+<!-- Ajouter un plugin dans D3 qui permette de mettre l'image dans les balises 
+imagemap-generator
+faire en position fixe
+3js - permet de se déplacer dans les données
+Dans le svg 
+A Faire:
+- fixer la page
+- Faire les formes en ImageMapster - pluging Jquery (C'est du svg, et attention se comporte différemment.)
+- et si jevoulais voir toutes les toiles triées par thème, faire du filtrage avec D3 avec juste un bouton cliquable. (Filtering in D3.js - type masonry ou Isotope Filtering) //ça c'est ce qu'il me reste à faire !
+-->
+<div class="leDiv"></div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/d3/5.7.0/d3.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/maphilight/1.4.0/jquery.maphilight.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/image-picker/0.3.0/image-picker.min.js'></script>
+
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>

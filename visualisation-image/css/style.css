@@ -1,0 +1,32 @@
+body {
+  background-color: white;
+  font-family: helvetica;
+}
+
+.leDiv {
+  position: static;
+  text-align: center;
+  line-height: 20px;
+  padding: 10px;
+  font: 11px helvetica;
+  border: 4px solid black;
+  background-color: white;
+  margin: 10px;
+}
+
+h1{
+text-align: center 
+}
+h2{
+text-align: center 
+}
+.imgExpo {
+    padding: 5px;
+    width: 450px;
+}
+p {
+  margin-left : 80px;
+  margin-right : 80px;
+  padding : 20px;
+  border : 4px solid black;
+}
